@@ -1,4 +1,4 @@
-package dev.vanovetech.pluralsight.junit5.intake;
+package dev.vanovertech.pluralsight.junit5.intake;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -24,7 +24,7 @@ public class ClinicCalendar {
             localDateTime = LocalDateTime.parse(dateTime.toUpperCase()
                     , DateTimeFormatter.ofPattern("M/d/yyyy h:mm a", Locale.US));
         } catch (Exception e) {
-            throw new ScheduledApptException("Unable to create appointment from: [" + dateTime.toUpperCase() + "]");
+            throw new ScheduledApptException("Unable to create appointment from: [" + dateTime + "]");
         }
         PatientAppointment appointment = new PatientAppointment(patientLastName, patientFirstName, localDateTime, doctor);
         appointments.add(appointment);

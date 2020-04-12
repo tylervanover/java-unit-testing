@@ -1,4 +1,4 @@
-package dev.vanovetech.pluralsight.junit5.intake;
+package dev.vanovertech.pluralsight.junit5.intake;
 
 public enum Doctor {
     avery("Ralpha Avery")
